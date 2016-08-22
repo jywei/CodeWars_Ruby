@@ -1,13 +1,11 @@
 # def dig_pow(n, p)
-#   # your code
-#   while p < Math.log10(n).to_i + 2
-#     digit = n / 10**(p+1)
-#     num = digit**p
+#   sum = 0
+#   n.to_s.split("").each do |l|
+#     sum += l.to_i**(p)
 #     p += 1
-#     return num += num
 #   end
+#   sum % n == 0 ? (sum / n) : -1
 # end
-#
 
 def dig_pow(n, p)
   # your code
